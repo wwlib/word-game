@@ -1,0 +1,170 @@
+.app-panel {
+  position: absolute;
+  padding: 6px;
+  background-color: #f7f7f7;
+  width: 1024px;
+  top: 60px;
+  left: 10px;
+  z-index: 100;
+}
+
+.app-panel textarea {
+    resize: none;
+}
+
+.app-panel table {
+    border-style: hidden;
+}
+
+.app-panel td {
+    border-style: hidden;
+}
+
+.panel-buttons {
+    padding-top: 6px;
+}
+
+#appButtons {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 6px;
+    background-color: grey;
+    color: white;
+}
+
+#gamePanel {
+    position: absolute;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    padding: 6px;
+    background-color: #f7f7f7;
+    top: 60px;
+    left: 10px;
+    z-index: 100;
+}
+
+#wordList {
+    position: relative;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    padding: 6px;
+    float: left;
+    margin: 6px;
+}
+
+.word {
+    background-color: #f7f7f7;
+}
+
+.word-selected {
+    background-color: #a7a7a7;
+}
+
+#board {
+    position: relative;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    padding: 6px;
+    float: left;
+    margin: 6px;
+}
+
+.letter {
+
+}
+
+.letter-hilighted {
+    background-color: #a7a7a7;
+}
+
+.board-td {
+    border-top: 0px;
+}
+
+#letter {
+    position: relative;
+    width: 30px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    padding: 6px;
+}
+
+/* Global variables */
+
+:root {
+	--color-light-gray: hsl(220, 10%, 85%);
+	--color-red: hsl(0, 80%, 48%);
+	--color-yellow: gold;
+	--color-green: hsl(85, 90%, 37%);
+	--color-orange: hsl(30, 100%, 50%);
+	--color-blue: hsl(210, 80%, 45%);
+	--color-purple: purple;
+
+	--top-bar-height: 80px;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	overflow-y:scroll;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+	/*padding-top:30px;*/
+    background-color: #CFCFCF;
+}
+
+textarea {
+	width: 100%;
+}
+
+table {
+    border: 0px;
+}
+
+/***************************
+Top Navigation Bar
+****************************/
+
+.topNav {
+	margin: 0;
+	padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--top-bar-height);
+}
+
+.topTitle {
+    width: 100%;
+    background-color: #04478d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.topButtons {
+	width: calc(100% - var(--side-bar-width));
+	background-color: #CFCFCF;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Unsure what this is, ask Hiya*/
+
+@media screen and (max-height: 450px) {
+    .sideNav {padding-top: 20px;}
+    .sideNav a {font-size: 18px;}
+}
