@@ -5,6 +5,8 @@
 
 A react, typescript word game example.
 
+[http://wwlib.github.io/word-game/](http://wwlib.github.io/word-game/)  
+
 Note: This is a work in-progress...
 
 ```
